@@ -18,28 +18,19 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
   const contactHref = locale === "ar" ? "/ar/contact" : "/contact";
   const servicesHref = locale === "ar" ? "/ar/services" : "/services";
   const bookLabel = locale === "ar" ? "احجز استشارة" : "Book a Consultation";
+  const webLogo = locale === "ar" ? "/images/web-logo-ar.png" : "/images/web-logo-en.png";
 
   return (
     <header className="sticky top-0 z-50 border-b border-forest/10 bg-cream/95 backdrop-blur dark:border-gold/20 dark:bg-forest-dark/95">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
-        <Link href={homeHref} className="flex shrink-0 items-center gap-3">
-          <Image src="/images/icon-color.png" alt="" width={400} height={400} priority className="h-10 w-auto shrink-0 dark:hidden sm:h-12" />
-          <Image src="/images/icon-white.png" alt="" width={400} height={400} priority className="hidden h-10 w-auto shrink-0 dark:block sm:h-12" />
+        <Link href={homeHref} className="flex shrink-0 items-center rounded-md dark:bg-cream dark:px-3 dark:py-1.5">
           <Image
-            src="/images/logo-wordmark-bilingual.png"
+            src={webLogo}
             alt="Digital Solutions Shield / درع الحلول الرقمية"
-            width={1400}
-            height={509}
+            width={1200}
+            height={400}
             priority
-            className="h-6 w-auto shrink-0 dark:hidden sm:h-8"
-          />
-          <Image
-            src="/images/logo-wordmark-bilingual-white.png"
-            alt="Digital Solutions Shield / درع الحلول الرقمية"
-            width={1400}
-            height={509}
-            priority
-            className="hidden h-6 w-auto shrink-0 dark:block sm:h-8"
+            className="h-12 w-auto shrink-0 sm:h-14"
           />
         </Link>
 
