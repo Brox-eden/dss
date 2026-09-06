@@ -18,15 +18,29 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
   const contactHref = locale === "ar" ? "/ar/contact" : "/contact";
   const servicesHref = locale === "ar" ? "/ar/services" : "/services";
   const bookLabel = locale === "ar" ? "احجز استشارة" : "Book a Consultation";
-  const logoLight = locale === "ar" ? "/images/logo-full-ar.png" : "/images/logo-full-en.png";
-  const logoDark = locale === "ar" ? "/images/logo-full-ar-dark.png" : "/images/logo-full-en-dark.png";
 
   return (
     <header className="sticky top-0 z-50 border-b border-forest/10 bg-cream/95 backdrop-blur dark:border-gold/20 dark:bg-forest-dark/95">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
-        <Link href={homeHref} className="flex shrink-0 items-center">
-          <Image src={logoLight} alt="Digital Solutions Shield" width={500} height={500} priority className="h-16 w-auto shrink-0 dark:hidden sm:h-[4.5rem]" />
-          <Image src={logoDark} alt="Digital Solutions Shield" width={500} height={500} priority className="hidden h-16 w-auto shrink-0 dark:block sm:h-[4.5rem]" />
+        <Link href={homeHref} className="flex shrink-0 items-center gap-3">
+          <Image src="/images/icon-color.png" alt="" width={400} height={400} priority className="h-10 w-auto shrink-0 dark:hidden sm:h-12" />
+          <Image src="/images/icon-white.png" alt="" width={400} height={400} priority className="hidden h-10 w-auto shrink-0 dark:block sm:h-12" />
+          <Image
+            src="/images/logo-wordmark-bilingual.png"
+            alt="Digital Solutions Shield / درع الحلول الرقمية"
+            width={1400}
+            height={509}
+            priority
+            className="h-6 w-auto shrink-0 dark:hidden sm:h-8"
+          />
+          <Image
+            src="/images/logo-wordmark-bilingual-white.png"
+            alt="Digital Solutions Shield / درع الحلول الرقمية"
+            width={1400}
+            height={509}
+            priority
+            className="hidden h-6 w-auto shrink-0 dark:block sm:h-8"
+          />
         </Link>
 
         <nav className="hidden items-center gap-5 lg:gap-7 md:flex">

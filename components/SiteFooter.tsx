@@ -18,7 +18,7 @@ export default function SiteFooter({ locale }: { locale: "en" | "ar" }) {
       <div className="mx-auto max-w-6xl px-6 py-14 sm:px-8">
         <div className="grid gap-10 md:grid-cols-3">
           <div>
-            <Image src="/images/icon-white.png" alt="DSS" width={40} height={48} className="mb-4 h-12 w-auto" />
+            <Image src="/images/icon-white.png" alt="DSS" width={400} height={400} className="mb-4 h-12 w-auto" />
             <p className="max-w-xs text-sm text-cream/70 dark:text-forest-dark/70">{site.tagline}</p>
           </div>
 

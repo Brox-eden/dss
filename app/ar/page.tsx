@@ -43,24 +43,15 @@ export default function HomeAr() {
               </Link>
             </div>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-6 md:justify-end">
+          <div className="flex justify-center md:justify-end">
             <Image
               src="/images/icon-white.png"
               alt="شعار درع DSS"
-              width={312}
-              height={380}
-              className="h-48 w-auto opacity-90 sm:h-64"
+              width={400}
+              height={400}
+              className="h-64 w-auto opacity-90 sm:h-80"
               priority
             />
-            <div className="rounded-lg bg-cream px-4 py-3 shadow-sm">
-              <Image
-                src="/images/logo-wordmark-bilingual.png"
-                alt="Digital Solutions Shield / درع الحلول الرقمية"
-                width={1400}
-                height={509}
-                className="h-10 w-auto sm:h-14"
-              />
-            </div>
           </div>
         </div>
       </section>
