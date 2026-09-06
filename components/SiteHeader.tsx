@@ -19,18 +19,27 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
   const servicesHref = locale === "ar" ? "/ar/services" : "/services";
   const bookLabel = locale === "ar" ? "احجز استشارة" : "Book a Consultation";
   const webLogo = locale === "ar" ? "/images/web-logo-ar.png" : "/images/web-logo-en.png";
+  const webLogoWhite = locale === "ar" ? "/images/web-logo-ar-white.png" : "/images/web-logo-en-white.png";
 
   return (
     <header className="sticky top-0 z-50 border-b border-forest/10 bg-cream/95 backdrop-blur dark:border-gold/20 dark:bg-forest-dark/95">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
-        <Link href={homeHref} className="flex shrink-0 items-center rounded-md dark:bg-cream dark:px-3 dark:py-1.5">
+        <Link href={homeHref} className="flex shrink-0 items-center">
           <Image
             src={webLogo}
             alt="Digital Solutions Shield / درع الحلول الرقمية"
             width={1200}
             height={400}
             priority
-            className="h-12 w-auto shrink-0 sm:h-14"
+            className="h-12 w-auto shrink-0 dark:hidden sm:h-14"
+          />
+          <Image
+            src={webLogoWhite}
+            alt="Digital Solutions Shield / درع الحلول الرقمية"
+            width={1200}
+            height={400}
+            priority
+            className="hidden h-12 w-auto shrink-0 dark:block sm:h-14"
           />
         </Link>
 
