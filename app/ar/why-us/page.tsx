@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { differentiators } from "@/lib/content.ar";
+import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
   title: "لماذا DSS | درع الحلول الرقمية",
@@ -11,6 +12,7 @@ export default function WhyUsPageAr() {
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
+          <BackButton locale="ar" label="رجوع" />
           <p className="eyebrow text-gold-light dark:text-forest-dark">الفرق</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">لماذا درع الحلول الرقمية؟</h1>
         </div>

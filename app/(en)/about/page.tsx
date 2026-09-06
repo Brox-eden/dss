@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { about, coreValues, methodology, mission, vision } from "@/lib/content";
+import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
   title: "About | Digital Solutions Shield",
@@ -10,6 +11,7 @@ export default function AboutPage() {
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
+          <BackButton locale="en" label="Back" />
           <p className="eyebrow text-gold-light dark:text-forest-dark">About</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">About Digital Solutions Shield</h1>
         </div>

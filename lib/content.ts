@@ -6,7 +6,7 @@ export const site = {
   name: "Digital Solutions Shield",
   shortName: "DSS",
   tagline:
-    "At DS-Shield, we lead your organization's digital transformation journey from the ground up — starting with infrastructure consulting and engineering, securing your assets to the highest cybersecurity standards, and multiplying your productivity through custom AI solutions.",
+    "At DS-Shield, we lead your organization's digital transformation from the ground up, starting with infrastructure consulting and engineering, through securing your assets to the highest cybersecurity standards, to multiplying your productivity with custom AI solutions.",
   domain: "ds-shield.com",
   email: "info@ds-shield.com",
 };
@@ -14,7 +14,7 @@ export const site = {
 export const heroTitle = "Your Digital Shield.. Where solid infrastructure meets innovative AI.";
 
 export const valueProposition =
-  "Your digital transformation journey begins with a solid engineering foundation, is guarded by rigorous cybersecurity, and is managed by superior artificial intelligence.";
+  "Your digital transformation starts with solid engineering, stays protected by strict cybersecurity, and runs on smart AI.";
 
 export const ctaExploreServices = "Explore Our Professional Services";
 export const ctaBookConsultation = "Book a Digital Consultation";
@@ -26,7 +26,7 @@ export const mission =
   "To integrate regulatory alignment, operational efficiency and engineering excellence, strengthening continuity and infrastructure resilience.";
 
 export const about =
-  "We are Digital Solutions Shield (DS-Shield), your strategic partner for fully integrated digital transformation in Saudi Arabia. We recognize that today's technical challenges cannot be solved with fragmented solutions — so we combine deep engineering expertise in infrastructure and network design and implementation, leadership in cybersecurity consulting and risk management, and innovation in administrative AI technologies. Our team is led by globally certified experts, ensuring solutions that meet the highest local and international standards.";
+  "We are Digital Solutions Shield (DS-Shield), your strategic partner for digital transformation in Saudi Arabia. Modern technical challenges can't be solved with piecemeal fixes, so we bring together deep engineering experience in infrastructure and network design, hands-on cybersecurity consulting and risk management, and administrative AI innovation, all under one roof. Our team is led by globally certified experts, so our work holds up against the highest local and international standards.";
 
 export const coreValues = [
   "Professional integrity",
@@ -175,7 +175,7 @@ export const differentiators = [
   {
     number: "03",
     title: "End-to-End Solutions",
-    description: "We don't cover just one side of the equation — we bring together infrastructure stability, cybersecurity resilience and AI innovation in one cohesive package.",
+    description: "We don't just handle one piece of the puzzle. We bring infrastructure stability, cybersecurity resilience and AI innovation together, in one package.",
   },
 ];
 

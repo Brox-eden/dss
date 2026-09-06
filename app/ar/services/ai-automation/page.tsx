@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { servicePillars } from "@/lib/content.ar";
+import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
   title: "أدوات الذكاء الاصطناعي والأتمتة | درع الحلول الرقمية",
@@ -13,6 +14,7 @@ export default function AiAutomationPageAr() {
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
+          <BackButton locale="ar" label="رجوع" />
           <p className="eyebrow text-gold-light dark:text-forest-dark">خط خدمة جديد · {pillar.number}</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">{pillar.title}</h1>
           <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">{pillar.summary}</p>

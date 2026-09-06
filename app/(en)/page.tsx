@@ -49,8 +49,8 @@ export default function Home() {
 
       {/* VALUE PROPOSITION */}
       <section className="section !py-12 text-center">
-        <p className="mx-auto max-w-3xl font-heading text-xl font-medium italic text-forest/90 dark:text-cream/90 sm:text-2xl">
-          &ldquo;{valueProposition}&rdquo;
+        <p className="mx-auto max-w-3xl font-heading text-xl font-medium text-forest/90 dark:text-cream/90 sm:text-2xl">
+          {valueProposition}
         </p>
       </section>
 

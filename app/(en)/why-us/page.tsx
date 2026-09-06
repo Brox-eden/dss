@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { differentiators } from "@/lib/content";
+import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
   title: "Why DSS | Digital Solutions Shield",
@@ -11,6 +12,7 @@ export default function WhyUsPage() {
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
+          <BackButton locale="en" label="Back" />
           <p className="eyebrow text-gold-light dark:text-forest-dark">Difference</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">Why Digital Solutions Shield?</h1>
         </div>

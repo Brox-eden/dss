@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { about, coreValues, methodology, mission, vision } from "@/lib/content.ar";
+import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
   title: "من نحن | درع الحلول الرقمية",
@@ -10,6 +11,7 @@ export default function AboutPageAr() {
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
+          <BackButton locale="ar" label="رجوع" />
           <p className="eyebrow text-gold-light dark:text-forest-dark">من نحن</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">عن درع الحلول الرقمية</h1>
         </div>
