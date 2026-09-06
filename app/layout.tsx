@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Oswald, Inter, Tajawal } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/content";
+import { organizationSchema } from "@/lib/seo";
+import JsonLd from "@/components/JsonLd";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -51,6 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr" suppressHydrationWarning>
       <head>
+        <JsonLd data={organizationSchema()} />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{var t=localStorage.getItem('theme');var d=t?t==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;if(d)document.documentElement.classList.add('dark');var isAr=location.pathname==='/ar'||location.pathname.indexOf('/ar/')===0;if(isAr){document.documentElement.lang='ar';document.documentElement.dir='rtl';}}catch(e){}})();`,

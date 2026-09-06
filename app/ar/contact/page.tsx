@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { pageSeo, site } from "@/lib/content.ar";
 import { hreflang } from "@/lib/seo";
-import CalendlyEmbed from "@/components/CalendlyEmbed";
+import ContactForm from "@/components/ContactForm";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
@@ -16,16 +16,15 @@ export default function ContactPageAr() {
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
           <p className="eyebrow text-gold-light dark:text-forest-dark">تواصل معنا</p>
-          <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">احجز استشارة</h1>
+          <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">تواصل معنا</h1>
           <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">
-            اختر الوقت المناسب لك أدناه وسنؤكد استشارتك. (سيتولى سكرتير ذكي هذه الخطوة مباشرة على
-            الموقع في مرحلة لاحقة.)
+            أرسل لنا رسالة حول احتياجاتك في الامتثال أو الأمن السيبراني أو البنية التحتية أو الأتمتة، وسنرد عليك عبر البريد الإلكتروني.
           </p>
         </div>
       </section>
 
       <section className="section grid gap-12 md:grid-cols-2">
-        <CalendlyEmbed locale="ar" />
+        <ContactForm locale="ar" />
 
         <div className="space-y-6">
           <div className="card">

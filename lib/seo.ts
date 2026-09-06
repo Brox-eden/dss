@@ -19,3 +19,53 @@ export function itemAnchor(title: string) {
     .replace(/[^a-z0-9؀-ۿ]+/g, "-")
     .replace(/^-+|-+$/g, "");
 }
+
+const SITE_URL = "https://ds-shield.com";
+
+// Organization schema, rendered once site-wide in the root layout.
+export function organizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Digital Solutions Shield",
+    alternateName: "DSS",
+    url: SITE_URL,
+    logo: `${SITE_URL}/images/web-logo-en.png`,
+    email: "info@ds-shield.com",
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "SA",
+    },
+  };
+}
+
+// Service schema for one pillar's detail page.
+export function serviceSchema({
+  name,
+  description,
+  path,
+  locale,
+}: {
+  name: string;
+  description: string;
+  path: string;
+  locale: "en" | "ar";
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name,
+    description,
+    provider: {
+      "@type": "Organization",
+      name: "Digital Solutions Shield",
+      url: SITE_URL,
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "Saudi Arabia",
+    },
+    url: `${SITE_URL}${path}`,
+    inLanguage: locale,
+  };
+}

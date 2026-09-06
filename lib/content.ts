@@ -269,8 +269,8 @@ export const pageSeo = {
       "Local regulatory expertise, globally certified consultants (CISM, CRISC, CGEIT), and end-to-end delivery from DS-Shield.",
   },
   contact: {
-    title: "Contact DS-Shield | Book a Consultation",
+    title: "Contact DS-Shield | Get in Touch",
     description:
-      "Book a consultation with DS-Shield's team to discuss your compliance, cybersecurity, infrastructure or AI automation needs.",
+      "Send DS-Shield's team a message about your compliance, cybersecurity, infrastructure or AI automation needs.",
   },
 };

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { pageSeo, servicePillars } from "@/lib/content";
-import { hreflang, itemAnchor } from "@/lib/seo";
+import { hreflang, itemAnchor, serviceSchema } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
+import JsonLd from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: pageSeo["services/governance-consulting"].title,
@@ -15,6 +16,14 @@ const pillar = servicePillars.find((p) => p.slug === "governance-consulting")!;
 export default function GovernanceConsultingPage() {
   return (
     <>
+      <JsonLd
+        data={serviceSchema({
+          name: pillar.title,
+          description: pillar.summary,
+          path: "/services/governance-consulting",
+          locale: "en",
+        })}
+      />
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
           <p className="eyebrow text-gold-light dark:text-forest-dark">Advisory · {pillar.number}</p>

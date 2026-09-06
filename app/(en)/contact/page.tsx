@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { pageSeo, site } from "@/lib/content";
 import { hreflang } from "@/lib/seo";
-import CalendlyEmbed from "@/components/CalendlyEmbed";
+import ContactForm from "@/components/ContactForm";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
@@ -16,16 +16,15 @@ export default function ContactPage() {
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
           <p className="eyebrow text-gold-light dark:text-forest-dark">Get in touch</p>
-          <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">Book a Consultation</h1>
+          <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">Contact Us</h1>
           <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">
-            Pick a time that works for you below and we&apos;ll confirm your consultation. (An AI
-            secretary will handle this step live on the site in a later phase.)
+            Send us a message about your compliance, cybersecurity, infrastructure or AI automation needs, and we&apos;ll reply by email.
           </p>
         </div>
       </section>
 
       <section className="section grid gap-12 md:grid-cols-2">
-        <CalendlyEmbed />
+        <ContactForm />
 
         <div className="space-y-6">
           <div className="card">
