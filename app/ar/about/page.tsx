@@ -11,7 +11,6 @@ export default function AboutPageAr() {
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
-          <BackButton locale="ar" label="رجوع" />
           <p className="eyebrow text-gold-light dark:text-forest-dark">من نحن</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">عن درع الحلول الرقمية</h1>
         </div>
@@ -54,6 +53,10 @@ export default function AboutPageAr() {
               </div>
             ))}
           </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <BackButton locale="ar" label="رجوع" />
         </div>
       </section>
     </>

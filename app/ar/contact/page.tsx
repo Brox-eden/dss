@@ -12,7 +12,6 @@ export default function ContactPageAr() {
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
-          <BackButton locale="ar" label="رجوع" />
           <p className="eyebrow text-gold-light dark:text-forest-dark">تواصل معنا</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">احجز استشارة</h1>
           <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">
@@ -36,6 +35,10 @@ export default function ContactPageAr() {
             <h2 className="font-heading text-lg font-semibold text-accent">الموقع الإلكتروني</h2>
             <p className="mt-2 text-muted-strong">{site.domain}</p>
           </div>
+        </div>
+
+        <div className="text-center md:col-span-2">
+          <BackButton locale="ar" label="رجوع" />
         </div>
       </section>
     </>

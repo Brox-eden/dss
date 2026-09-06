@@ -14,7 +14,6 @@ export default function ConsultingCompliancePage() {
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
-          <BackButton locale="en" label="Back" />
           <p className="eyebrow text-gold-light dark:text-forest-dark">Advisory · {pillar.number}</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">{pillar.title}</h1>
           <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">{pillar.summary}</p>
@@ -31,7 +30,8 @@ export default function ConsultingCompliancePage() {
           ))}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
+          <BackButton locale="en" label="Back" />
           <Link href="/contact" className="btn-primary inline-flex">
             Book a Consultation
           </Link>
