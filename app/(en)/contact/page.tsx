@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { site } from "@/lib/content";
+import { pageSeo, site } from "@/lib/content";
+import { hreflang } from "@/lib/seo";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "Contact | Digital Solutions Shield",
+  title: pageSeo.contact.title,
+  description: pageSeo.contact.description,
+  alternates: hreflang("/contact", "/ar/contact"),
 };
 
 export default function ContactPage() {

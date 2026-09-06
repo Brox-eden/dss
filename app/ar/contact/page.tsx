@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { site } from "@/lib/content.ar";
+import { pageSeo, site } from "@/lib/content.ar";
+import { hreflang } from "@/lib/seo";
 import CalendlyEmbed from "@/components/CalendlyEmbed";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "تواصل معنا | درع الحلول الرقمية",
+  title: pageSeo.contact.title,
+  description: pageSeo.contact.description,
+  alternates: hreflang("/contact", "/ar/contact"),
 };
 
 export default function ContactPageAr() {

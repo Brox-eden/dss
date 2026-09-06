@@ -1,5 +1,6 @@
 // Central place for site copy, sourced from
-// "DS-Shield - التحديث الشامل" (comprehensive content update, Sep 2026).
+// "DS-Shield - التحديث الشامل" (comprehensive content update, Sep 2026)
+// and "خطة وهيكلة موقع DS-Shield الشاملة" (SEO & site structure plan, Sep 2026).
 // Edit here, not in pages.
 
 export const site = {
@@ -37,59 +38,90 @@ export const coreValues = [
 
 export const servicePillars = [
   {
-    slug: "professional-services",
+    slug: "governance-consulting",
     number: "01",
-    title: "Infrastructure Consulting & Professional Services",
+    title: "Governance & Consulting",
     summary:
-      "We build and develop your organization's technical infrastructure to be a solid, stable foundation for your digital operations, with precise engineering implementation services for complex systems.",
+      "Governance frameworks, risk assessment and security audits that keep your compliance program ahead of NCA and international requirements.",
     items: [
       {
-        title: "Network Design & Engineering (HLD/LLD)",
-        description:
-          "Advanced technical designs and planning for upgrades and migrations that ensure high, uninterrupted performance.",
+        title: "Governance Frameworks & Compliance",
+        description: "Alignment with national (NCA) and international (NIST CSF) standards.",
       },
       {
-        title: "Systems Integration",
-        description:
-          "Professional setup and installation services for digital infrastructure solutions, and wired/wireless networking for educational, government and other institutions.",
+        title: "Risk Assessment & Mitigation Strategies",
+        description: "Analyzing cybersecurity and operational risks and building mitigation plans.",
+      },
+      {
+        title: "Security Review & Audit",
+        description: "A comprehensive review of your current policies and procedures.",
+      },
+      {
+        title: "Digital Transformation Roadmaps",
+        description: "Advisory on designing a fully integrated digital architecture.",
       },
     ],
   },
   {
-    slug: "consulting-compliance",
+    slug: "cybersecurity",
     number: "02",
-    title: "Cybersecurity & Risk Consulting",
+    title: "Cybersecurity",
     summary:
-      "Comprehensive protection for your digital assets and continuous risk assessment against leading frameworks, so your business keeps running.",
+      "Penetration testing, incident response and the identity, network and endpoint controls that keep your systems resilient against real threats.",
     items: [
       {
-        title: "Compliance",
-        description:
-          "Qualifying organizations for full alignment with Saudi NCA controls, applying global frameworks such as NIST CSF 2.0, and preparing for ISO certification.",
+        title: "Penetration Testing & Vulnerability Assessment",
+        description: "Testing your systems to find and fix weaknesses before attackers do.",
       },
       {
-        title: "Business Continuity & Disaster Recovery (BCP & DR)",
-        description:
-          "Designing disaster-recovery strategies and redundancy planning between primary and backup data centers to keep services available during a crisis.",
+        title: "Incident Response Plan (IRR)",
+        description: "Containment and fast-recovery strategies for when an attack happens.",
       },
       {
-        title: "Enterprise Risk Management",
-        description:
-          "Identifying, analyzing and assessing strategic and operational technology risks, and building proactive treatment plans based on structured methodologies.",
+        title: "Identity & Access Security",
+        description: "Governing logins and managing high-privilege accounts across the board.",
       },
       {
-        title: "Cybersecurity Policy Development",
-        description:
-          "Drafting and developing information-security policies, application controls, endpoint-security policies and email protection.",
+        title: "Network & Application Security",
+        description: "Designing and securing your network layers and web gateways.",
+      },
+      {
+        title: "Endpoint Security & Data Protection",
+        description: "Policies and tools that lock down every endpoint.",
+      },
+    ],
+  },
+  {
+    slug: "professional-services",
+    number: "03",
+    title: "Infrastructure & Professional Services",
+    summary:
+      "Enterprise architecture, systems integration and business continuity, backed by managed support that keeps it all running.",
+    items: [
+      {
+        title: "Enterprise Architecture Design (HLD/LLD)",
+        description: "Advanced network and data-center engineering.",
+      },
+      {
+        title: "Systems Integration",
+        description: "Implementing and configuring technical and security solutions to fit any environment.",
+      },
+      {
+        title: "Business Continuity Planning (BCP)",
+        description: "Planning and setting up backup data centers so your services stay available.",
+      },
+      {
+        title: "Technical Support & Managed Services",
+        description: "Engineering staff and SLA-managed support, on an ongoing basis.",
       },
     ],
   },
   {
     slug: "ai-automation",
-    number: "03",
-    title: "AI & Business Automation",
+    number: "04",
+    title: "AI & Automation",
     summary:
-      "Speeding up your workflow and cutting operating costs by embedding AI tools into your HR and administrative functions.",
+      "Speeding up your workflow and cutting operating costs by embedding AI tools into your HR, administrative and support functions.",
     items: [
       {
         title: "AI Secretarial Assistant",
@@ -107,9 +139,9 @@ export const servicePillars = [
           "Solutions that give employees instant answers to questions about internal policies and procedures.",
       },
       {
-        title: "Specialized Model Development",
+        title: "AI Agent Development",
         description:
-          "Consulting on integrating generative AI and large language models into your organization's environment, securely and privately.",
+          "Custom AI agents and workflow automation, built around the specific process you want to automate.",
       },
     ],
   },
@@ -187,3 +219,58 @@ export const nav = [
   { href: "/why-us", label: "Why DSS" },
   { href: "/contact", label: "Contact" },
 ];
+
+// Title tags stay under ~60 characters; descriptions run ~150-160 for a full
+// meta description. Keyed by route so pages can pull their own pair.
+export const pageSeo = {
+  home: {
+    title: "DS-Shield | Cybersecurity & IT Consulting, Saudi Arabia",
+    description:
+      "DS-Shield is a Saudi Arabia based cybersecurity and IT consulting firm covering governance, infrastructure, and AI automation for government and enterprise.",
+  },
+  about: {
+    title: "About DS-Shield | Cybersecurity Consulting, Saudi Arabia",
+    description:
+      "Learn about DS-Shield, a Saudi Arabia based cybersecurity and digital transformation consultancy led by globally certified experts.",
+  },
+  services: {
+    title: "Cybersecurity & IT Services | DS-Shield Saudi Arabia",
+    description:
+      "Explore DS-Shield's governance, cybersecurity, infrastructure and AI automation services for organizations across Saudi Arabia.",
+  },
+  "services/governance-consulting": {
+    title: "Governance & Compliance Consulting | DS-Shield",
+    description:
+      "NCA and NIST CSF compliance, risk assessment, security audits and digital transformation roadmaps for Saudi organizations.",
+  },
+  "services/cybersecurity": {
+    title: "Cybersecurity Consulting Services | DS-Shield Saudi Arabia",
+    description:
+      "Penetration testing, incident response planning, identity and access security, and network protection from DS-Shield in Saudi Arabia.",
+  },
+  "services/professional-services": {
+    title: "Infrastructure & Professional Services | DS-Shield",
+    description:
+      "Enterprise architecture (HLD/LLD), systems integration, business continuity planning and managed support from DS-Shield.",
+  },
+  "services/ai-automation": {
+    title: "AI & Business Automation Services | DS-Shield",
+    description:
+      "AI secretarial tools, HR automation and custom AI agent development that streamline operations for Saudi organizations.",
+  },
+  engagement: {
+    title: "Engagement Models | DS-Shield Consulting Saudi Arabia",
+    description:
+      "Choose the engagement model that fits: project-based delivery, a consulting retainer, or embedded subcontracting and staffing.",
+  },
+  whyUs: {
+    title: "Why DS-Shield | Certified Cybersecurity Experts",
+    description:
+      "Local regulatory expertise, globally certified consultants (CISM, CRISC, CGEIT), and end-to-end delivery from DS-Shield.",
+  },
+  contact: {
+    title: "Contact DS-Shield | Book a Consultation",
+    description:
+      "Book a consultation with DS-Shield's team to discuss your compliance, cybersecurity, infrastructure or AI automation needs.",
+  },
+};

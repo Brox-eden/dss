@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { engagementModels } from "@/lib/content.ar";
+import { engagementModels, pageSeo } from "@/lib/content.ar";
+import { hreflang } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "نماذج التعاون | درع الحلول الرقمية",
+  title: pageSeo.engagement.title,
+  description: pageSeo.engagement.description,
+  alternates: hreflang("/engagement", "/ar/engagement"),
 };
 
 export default function EngagementPageAr() {

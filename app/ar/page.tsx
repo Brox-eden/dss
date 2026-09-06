@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -7,11 +8,19 @@ import {
   differentiators,
   heroTitle,
   mission,
+  pageSeo,
   servicePillars,
   site,
   valueProposition,
   vision,
 } from "@/lib/content.ar";
+import { hreflang } from "@/lib/seo";
+
+export const metadata: Metadata = {
+  title: pageSeo.home.title,
+  description: pageSeo.home.description,
+  alternates: hreflang("/", "/ar"),
+};
 
 export default function HomeAr() {
   return (
@@ -34,15 +43,24 @@ export default function HomeAr() {
               </Link>
             </div>
           </div>
-          <div className="flex justify-center md:justify-end">
+          <div className="flex flex-wrap items-center justify-center gap-6 md:justify-end">
             <Image
               src="/images/icon-white.png"
               alt="شعار درع DSS"
               width={312}
               height={380}
-              className="h-64 w-auto opacity-90 sm:h-80"
+              className="h-48 w-auto opacity-90 sm:h-64"
               priority
             />
+            <div className="rounded-lg bg-cream px-4 py-3 shadow-sm">
+              <Image
+                src="/images/logo-wordmark-bilingual.png"
+                alt="Digital Solutions Shield / درع الحلول الرقمية"
+                width={1400}
+                height={509}
+                className="h-10 w-auto sm:h-14"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -83,7 +101,7 @@ export default function HomeAr() {
         <div className="section">
           <p className="eyebrow">التغطية</p>
           <h2 className="mt-3 font-heading text-3xl font-semibold">محفظة الخدمات</h2>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {servicePillars.map((pillar) => (
               <Link
                 key={pillar.slug}

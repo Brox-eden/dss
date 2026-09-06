@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { about, coreValues, methodology, mission, vision } from "@/lib/content.ar";
+import { about, coreValues, methodology, mission, pageSeo, vision } from "@/lib/content.ar";
+import { hreflang } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "من نحن | درع الحلول الرقمية",
+  title: pageSeo.about.title,
+  description: pageSeo.about.description,
+  alternates: hreflang("/about", "/ar/about"),
 };
 
 export default function AboutPageAr() {

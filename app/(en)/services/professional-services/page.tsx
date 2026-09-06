@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { servicePillars } from "@/lib/content";
+import { pageSeo, servicePillars } from "@/lib/content";
+import { hreflang, itemAnchor } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "Professional Services | Digital Solutions Shield",
+  title: pageSeo["services/professional-services"].title,
+  description: pageSeo["services/professional-services"].description,
+  alternates: hreflang("/services/professional-services", "/ar/services/professional-services"),
 };
 
 const pillar = servicePillars.find((p) => p.slug === "professional-services")!;
@@ -23,7 +26,7 @@ export default function ProfessionalServicesPage() {
       <section className="section">
         <div className="grid gap-6 md:grid-cols-2">
           {pillar.items.map((item) => (
-            <div key={item.title} className="card">
+            <div key={item.title} id={itemAnchor(item.title)} className="card scroll-mt-24">
               <h2 className="font-heading text-lg font-semibold">{item.title}</h2>
               <p className="mt-2 text-sm text-muted">{item.description}</p>
             </div>

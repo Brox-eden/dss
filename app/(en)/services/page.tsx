@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { servicePillars } from "@/lib/content";
+import { pageSeo, servicePillars } from "@/lib/content";
+import { hreflang } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "Services | Digital Solutions Shield",
+  title: pageSeo.services.title,
+  description: pageSeo.services.description,
+  alternates: hreflang("/services", "/ar/services"),
 };
 
 export default function ServicesPage() {
@@ -15,13 +18,13 @@ export default function ServicesPage() {
           <p className="eyebrow text-gold-light dark:text-forest-dark">Coverage</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">Service Portfolio</h1>
           <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">
-            Advisory, engineering, and now automation: three pillars covering the full path from policy to deployed protection.
+            Governance, cybersecurity, infrastructure and automation: four pillars covering the full path from policy to deployed protection.
           </p>
         </div>
       </section>
 
       <section className="section">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {servicePillars.map((pillar) => (
             <Link key={pillar.slug} href={`/services/${pillar.slug}`} className="card flex flex-col">
               <span className="font-heading text-sm text-accent">{pillar.number}</span>

@@ -5,40 +5,39 @@ import { hreflang, itemAnchor } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: pageSeo["services/ai-automation"].title,
-  description: pageSeo["services/ai-automation"].description,
-  alternates: hreflang("/services/ai-automation", "/ar/services/ai-automation"),
+  title: pageSeo["services/cybersecurity"].title,
+  description: pageSeo["services/cybersecurity"].description,
+  alternates: hreflang("/services/cybersecurity", "/ar/services/cybersecurity"),
 };
 
-const pillar = servicePillars.find((p) => p.slug === "ai-automation")!;
+const pillar = servicePillars.find((p) => p.slug === "cybersecurity")!;
 
-export default function AiAutomationPageAr() {
+export default function CybersecurityPageAr() {
   return (
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
         <div className="section">
-          <p className="eyebrow text-gold-light dark:text-forest-dark">خط خدمة جديد · {pillar.number}</p>
+          <p className="eyebrow text-gold-light dark:text-forest-dark">استشاري · {pillar.number}</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">{pillar.title}</h1>
           <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">{pillar.summary}</p>
         </div>
       </section>
 
       <section className="section">
-        <div className="mb-12 rounded-lg border border-gold/30 bg-gold/10 p-6">
-          <p className="font-heading text-sm font-semibold uppercase tracking-wide text-accent">
-            قريباً
-          </p>
-          <p className="mt-2 text-sm text-muted-strong">
-            سيشغّل هذا الموقع قريباً مثالاً حياً خاصاً به: سكرتير ذكي مبني على n8n يجيب على استفسارات
-            الزوار هنا مباشرة ويحجز الاستشارات في تقويمنا. في الوقت الحالي، إليك ما نقوم ببنائه.
-          </p>
-        </div>
-
         <div className="grid gap-6 md:grid-cols-2">
           {pillar.items.map((item) => (
             <div key={item.title} id={itemAnchor(item.title)} className="card scroll-mt-24">
               <h2 className="font-heading text-lg font-semibold">{item.title}</h2>
               <p className="mt-2 text-sm text-muted">{item.description}</p>
+              {item.title === "تقييم الاختراق والثغرات" && (
+                <p className="mt-3 text-sm text-muted-light">
+                  يرتبط بخدمة{" "}
+                  <a href="#خطة-الاستجابة-للحوادث-irr" className="text-accent hover:underline">
+                    خطة الاستجابة للحوادث
+                  </a>{" "}
+                  أدناه.
+                </p>
+              )}
             </div>
           ))}
         </div>
@@ -46,7 +45,7 @@ export default function AiAutomationPageAr() {
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
           <BackButton locale="ar" label="رجوع" />
           <Link href="/ar/contact" className="btn-primary inline-flex">
-            تحدث معنا عن وكيل ذكاء اصطناعي
+            احجز استشارة
           </Link>
         </div>
       </section>

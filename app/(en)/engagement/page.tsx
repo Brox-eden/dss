@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { engagementModels } from "@/lib/content";
+import { engagementModels, pageSeo } from "@/lib/content";
+import { hreflang } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "Engagement Models | Digital Solutions Shield",
+  title: pageSeo.engagement.title,
+  description: pageSeo.engagement.description,
+  alternates: hreflang("/engagement", "/ar/engagement"),
 };
 
 export default function EngagementPage() {

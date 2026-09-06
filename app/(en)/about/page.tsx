@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
-import { about, coreValues, methodology, mission, vision } from "@/lib/content";
+import { about, coreValues, methodology, mission, pageSeo, vision } from "@/lib/content";
+import { hreflang } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "About | Digital Solutions Shield",
+  title: pageSeo.about.title,
+  description: pageSeo.about.description,
+  alternates: hreflang("/about", "/ar/about"),
 };
 
 export default function AboutPage() {

@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { servicePillars } from "@/lib/content";
+import { pageSeo, servicePillars } from "@/lib/content";
+import { hreflang, itemAnchor } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "Consulting & Compliance | Digital Solutions Shield",
+  title: pageSeo["services/cybersecurity"].title,
+  description: pageSeo["services/cybersecurity"].description,
+  alternates: hreflang("/services/cybersecurity", "/ar/services/cybersecurity"),
 };
 
-const pillar = servicePillars.find((p) => p.slug === "consulting-compliance")!;
+const pillar = servicePillars.find((p) => p.slug === "cybersecurity")!;
 
-export default function ConsultingCompliancePage() {
+export default function CybersecurityPage() {
   return (
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
@@ -23,9 +26,18 @@ export default function ConsultingCompliancePage() {
       <section className="section">
         <div className="grid gap-6 md:grid-cols-2">
           {pillar.items.map((item) => (
-            <div key={item.title} className="card">
+            <div key={item.title} id={itemAnchor(item.title)} className="card scroll-mt-24">
               <h2 className="font-heading text-lg font-semibold">{item.title}</h2>
               <p className="mt-2 text-sm text-muted">{item.description}</p>
+              {item.title === "Penetration Testing & Vulnerability Assessment" && (
+                <p className="mt-3 text-sm text-muted-light">
+                  Pairs with our{" "}
+                  <a href="#incident-response-plan-irr" className="text-accent hover:underline">
+                    incident response planning
+                  </a>{" "}
+                  below.
+                </p>
+              )}
             </div>
           ))}
         </div>

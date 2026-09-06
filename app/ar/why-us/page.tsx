@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { differentiators } from "@/lib/content.ar";
+import { differentiators, pageSeo } from "@/lib/content.ar";
+import { hreflang } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "لماذا DSS | درع الحلول الرقمية",
+  title: pageSeo.whyUs.title,
+  description: pageSeo.whyUs.description,
+  alternates: hreflang("/why-us", "/ar/why-us"),
 };
 
 export default function WhyUsPageAr() {

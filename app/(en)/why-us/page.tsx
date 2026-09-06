@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { differentiators } from "@/lib/content";
+import { differentiators, pageSeo } from "@/lib/content";
+import { hreflang } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "Why DSS | Digital Solutions Shield",
+  title: pageSeo.whyUs.title,
+  description: pageSeo.whyUs.description,
+  alternates: hreflang("/why-us", "/ar/why-us"),
 };
 
 export default function WhyUsPage() {

@@ -1,15 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { servicePillars } from "@/lib/content.ar";
+import { pageSeo, servicePillars } from "@/lib/content.ar";
+import { hreflang, itemAnchor } from "@/lib/seo";
 import BackButton from "@/components/BackButton";
 
 export const metadata: Metadata = {
-  title: "الاستشارات والامتثال | درع الحلول الرقمية",
+  title: pageSeo["services/governance-consulting"].title,
+  description: pageSeo["services/governance-consulting"].description,
+  alternates: hreflang("/services/governance-consulting", "/ar/services/governance-consulting"),
 };
 
-const pillar = servicePillars.find((p) => p.slug === "consulting-compliance")!;
+const pillar = servicePillars.find((p) => p.slug === "governance-consulting")!;
 
-export default function ConsultingCompliancePageAr() {
+export default function GovernanceConsultingPageAr() {
   return (
     <>
       <section className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
@@ -23,12 +26,20 @@ export default function ConsultingCompliancePageAr() {
       <section className="section">
         <div className="grid gap-6 md:grid-cols-2">
           {pillar.items.map((item) => (
-            <div key={item.title} className="card">
+            <div key={item.title} id={itemAnchor(item.title)} className="card scroll-mt-24">
               <h2 className="font-heading text-lg font-semibold">{item.title}</h2>
               <p className="mt-2 text-sm text-muted">{item.description}</p>
             </div>
           ))}
         </div>
+
+        <p className="mt-6 text-sm text-muted">
+          هل تحتاج تقييماً أمنياً أعمق أولاً؟ راجع خدمات{" "}
+          <Link href="/ar/services/cybersecurity#تقييم-الاختراق-والثغرات" className="text-accent hover:underline">
+            تقييم الاختراق والثغرات
+          </Link>{" "}
+          لدينا.
+        </p>
 
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
           <BackButton locale="ar" label="رجوع" />
