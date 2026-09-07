@@ -20,7 +20,7 @@ export function itemAnchor(title: string) {
     .replace(/^-+|-+$/g, "");
 }
 
-const SITE_URL = "https://ds-shield.com";
+const SITE_URL = "https://dss-sa.com";
 
 // Organization schema, rendered once site-wide in the root layout.
 export function organizationSchema() {
@@ -31,7 +31,7 @@ export function organizationSchema() {
     alternateName: "DSS",
     url: SITE_URL,
     logo: `${SITE_URL}/images/web-logo-en.png`,
-    email: "info@ds-shield.com",
+    email: "info@ds-shield.com", // still on the old domain until the new mailbox is set up
     address: {
       "@type": "PostalAddress",
       addressCountry: "SA",

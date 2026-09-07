@@ -7,8 +7,8 @@ export const site = {
   name: "Digital Solutions Shield",
   shortName: "DSS",
   tagline:
-    "At DS-Shield, we lead your organization's digital transformation from the ground up, starting with infrastructure consulting and engineering, through securing your assets to the highest cybersecurity standards, to multiplying your productivity with custom AI solutions.",
-  domain: "ds-shield.com",
+    "At DSS, we lead your organization's digital transformation from the ground up, starting with infrastructure consulting and engineering, through securing your assets to the highest cybersecurity standards, to multiplying your productivity with custom AI solutions.",
+  domain: "dss-sa.com",
   email: "info@ds-shield.com",
 };
 
@@ -27,7 +27,7 @@ export const mission =
   "To integrate regulatory alignment, operational efficiency and engineering excellence, strengthening continuity and infrastructure resilience.";
 
 export const about =
-  "We are Digital Solutions Shield (DS-Shield), your strategic partner for digital transformation in Saudi Arabia. Modern technical challenges can't be solved with piecemeal fixes, so we bring together deep engineering experience in infrastructure and network design, hands-on cybersecurity consulting and risk management, and administrative AI innovation, all under one roof. Our team is led by globally certified experts, so our work holds up against the highest local and international standards.";
+  "We are Digital Solutions Shield (DSS), your strategic partner for digital transformation in Saudi Arabia. Modern technical challenges can't be solved with piecemeal fixes, so we bring together deep engineering experience in infrastructure and network design, hands-on cybersecurity consulting and risk management, and administrative AI innovation, all under one roof. Our team is led by globally certified experts, so our work holds up against the highest local and international standards.";
 
 export const coreValues = [
   "Professional integrity",
@@ -224,53 +224,53 @@ export const nav = [
 // meta description. Keyed by route so pages can pull their own pair.
 export const pageSeo = {
   home: {
-    title: "DS-Shield | Cybersecurity & IT Consulting, Saudi Arabia",
+    title: "DSS | Cybersecurity & IT Consulting, Saudi Arabia",
     description:
-      "DS-Shield is a Saudi Arabia based cybersecurity and IT consulting firm covering governance, infrastructure, and AI automation for government and enterprise.",
+      "DSS is a Saudi Arabia based cybersecurity and IT consulting firm covering governance, infrastructure, and AI automation for government and enterprise.",
   },
   about: {
-    title: "About DS-Shield | Cybersecurity Consulting, Saudi Arabia",
+    title: "About DSS | Cybersecurity Consulting, Saudi Arabia",
     description:
-      "Learn about DS-Shield, a Saudi Arabia based cybersecurity and digital transformation consultancy led by globally certified experts.",
+      "Learn about DSS, a Saudi Arabia based cybersecurity and digital transformation consultancy led by globally certified experts.",
   },
   services: {
-    title: "Cybersecurity & IT Services | DS-Shield Saudi Arabia",
+    title: "Cybersecurity & IT Services | DSS Saudi Arabia",
     description:
-      "Explore DS-Shield's governance, cybersecurity, infrastructure and AI automation services for organizations across Saudi Arabia.",
+      "Explore DSS's governance, cybersecurity, infrastructure and AI automation services for organizations across Saudi Arabia.",
   },
   "services/governance-consulting": {
-    title: "Governance & Compliance Consulting | DS-Shield",
+    title: "Governance & Compliance Consulting | DSS",
     description:
       "NCA and NIST CSF compliance, risk assessment, security audits and digital transformation roadmaps for Saudi organizations.",
   },
   "services/cybersecurity": {
-    title: "Cybersecurity Consulting Services | DS-Shield Saudi Arabia",
+    title: "Cybersecurity Consulting Services | DSS Saudi Arabia",
     description:
-      "Penetration testing, incident response planning, identity and access security, and network protection from DS-Shield in Saudi Arabia.",
+      "Penetration testing, incident response planning, identity and access security, and network protection from DSS in Saudi Arabia.",
   },
   "services/professional-services": {
-    title: "Infrastructure & Professional Services | DS-Shield",
+    title: "Infrastructure & Professional Services | DSS",
     description:
-      "Enterprise architecture (HLD/LLD), systems integration, business continuity planning and managed support from DS-Shield.",
+      "Enterprise architecture (HLD/LLD), systems integration, business continuity planning and managed support from DSS.",
   },
   "services/ai-automation": {
-    title: "AI & Business Automation Services | DS-Shield",
+    title: "AI & Business Automation Services | DSS",
     description:
       "AI secretarial tools, HR automation and custom AI agent development that streamline operations for Saudi organizations.",
   },
   engagement: {
-    title: "Engagement Models | DS-Shield Consulting Saudi Arabia",
+    title: "Engagement Models | DSS Consulting Saudi Arabia",
     description:
       "Choose the engagement model that fits: project-based delivery, a consulting retainer, or embedded subcontracting and staffing.",
   },
   whyUs: {
-    title: "Why DS-Shield | Certified Cybersecurity Experts",
+    title: "Why DSS | Certified Cybersecurity Experts",
     description:
-      "Local regulatory expertise, globally certified consultants (CISM, CRISC, CGEIT), and end-to-end delivery from DS-Shield.",
+      "Local regulatory expertise, globally certified consultants (CISM, CRISC, CGEIT), and end-to-end delivery from DSS.",
   },
   contact: {
-    title: "Contact DS-Shield | Get in Touch",
+    title: "Contact DSS | Get in Touch",
     description:
-      "Send DS-Shield's team a message about your compliance, cybersecurity, infrastructure or AI automation needs.",
+      "Send DSS's team a message about your compliance, cybersecurity, infrastructure or AI automation needs.",
   },
 };
