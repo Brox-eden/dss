@@ -15,16 +15,16 @@ export default function SiteFooter({ locale }: { locale: "en" | "ar" }) {
 
   return (
     <footer className="bg-forest text-cream dark:bg-gold dark:text-forest-dark">
-      <div className="mx-auto max-w-6xl px-6 py-14 sm:px-8">
-        <div className="grid gap-10 md:grid-cols-3">
-          <div>
-            <Image src="/images/icon-white.png" alt="DSS" width={400} height={400} className="mb-4 h-12 w-auto" />
-            <p className="max-w-xs text-sm text-cream/70 dark:text-forest-dark/70">{site.tagline}</p>
+      <div className="mx-auto max-w-6xl px-6 py-8 sm:px-8 sm:py-12">
+        <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 sm:gap-10">
+          <div className="col-span-2 sm:col-span-1">
+            <Image src="/images/icon-white.png" alt="DSS" width={400} height={400} className="h-10 w-auto" />
+            <p className="mt-2 font-heading text-sm font-semibold">{site.name}</p>
           </div>
 
           <div>
-            <h4 className="font-heading text-sm font-semibold uppercase tracking-wide text-gold-light dark:text-forest-dark">{navigateLabel}</h4>
-            <ul className="mt-4 space-y-2 text-sm text-cream/80 dark:text-forest-dark/80">
+            <h4 className="font-heading text-xs font-semibold uppercase tracking-wide text-gold-light dark:text-forest-dark">{navigateLabel}</h4>
+            <ul className="mt-3 space-y-1.5 text-sm text-cream/80 dark:text-forest-dark/80">
               {nav.map((item) => (
                 <li key={item.href}>
                   <Link href={item.href} className="hover:text-gold-light dark:hover:text-forest">
@@ -36,8 +36,8 @@ export default function SiteFooter({ locale }: { locale: "en" | "ar" }) {
           </div>
 
           <div>
-            <h4 className="font-heading text-sm font-semibold uppercase tracking-wide text-gold-light dark:text-forest-dark">{contactLabel}</h4>
-            <ul className="mt-4 space-y-2 text-sm text-cream/80 dark:text-forest-dark/80">
+            <h4 className="font-heading text-xs font-semibold uppercase tracking-wide text-gold-light dark:text-forest-dark">{contactLabel}</h4>
+            <ul className="mt-3 space-y-1.5 text-sm text-cream/80 dark:text-forest-dark/80">
               <li>{site.domain}</li>
               <li>
                 <a href={`mailto:${site.email}`} className="hover:text-gold-light dark:hover:text-forest">
@@ -48,7 +48,7 @@ export default function SiteFooter({ locale }: { locale: "en" | "ar" }) {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-cream/10 pt-6 text-xs text-cream/50 dark:border-forest-dark/20 dark:text-forest-dark/60">
+        <div className="mt-6 border-t border-cream/10 pt-4 text-xs text-cream/50 dark:border-forest-dark/20 dark:text-forest-dark/60 sm:mt-8">
           {rightsLabel}
         </div>
       </div>

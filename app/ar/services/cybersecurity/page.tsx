@@ -54,7 +54,7 @@ export default function CybersecurityPageAr() {
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
           <BackButton locale="ar" label="رجوع" />
           <Link href="/ar/contact" className="btn-primary inline-flex">
-            احجز استشارة
+            تواصل معنا
           </Link>
         </div>
       </section>

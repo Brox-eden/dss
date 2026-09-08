@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {
   about,
-  ctaBookConsultation,
+  ctaContactUs,
   ctaExploreServices,
   differentiators,
   heroTitle,
@@ -36,7 +36,7 @@ export default function HomeAr() {
             <p className="mt-6 max-w-xl text-cream/80 dark:text-forest-dark/80">{site.tagline}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/ar/contact" className="btn-primary bg-gold text-forest hover:bg-gold-light dark:bg-forest-dark dark:text-cream dark:hover:bg-forest">
-                {ctaBookConsultation}
+                {ctaContactUs}
               </Link>
               <Link href="/ar/services" className="btn-secondary border-cream text-cream hover:bg-cream hover:text-forest dark:border-forest-dark dark:text-forest-dark dark:hover:bg-forest-dark dark:hover:text-gold">
                 {ctaExploreServices}
@@ -150,10 +150,10 @@ export default function HomeAr() {
       <section className="section text-center">
         <h2 className="font-heading text-2xl font-semibold sm:text-3xl">هل أنت مستعد لتعزيز بنيتك التحتية الرقمية؟</h2>
         <p className="mx-auto mt-3 max-w-xl text-muted">
-          احجز استشارة مع فريقنا لنتحدث عن احتياجاتك في الامتثال أو الهندسة أو الأتمتة.
+          راسل فريقنا لنتحدث عن احتياجاتك في الامتثال أو الهندسة أو الأتمتة.
         </p>
         <Link href="/ar/contact" className="btn-primary mt-6 inline-flex">
-          احجز استشارة
+          تواصل معنا
         </Link>
       </section>
     </>

@@ -18,7 +18,7 @@ export const valueProposition =
   "Your digital transformation starts with solid engineering, stays protected by strict cybersecurity, and runs on smart AI.";
 
 export const ctaExploreServices = "Explore Our Professional Services";
-export const ctaBookConsultation = "Book a Digital Consultation";
+export const ctaContactUs = "Contact Us";
 
 export const vision =
   "To become the trusted advisory and technology shield for secure digital transformation and cyber-asset protection across Saudi Arabia and the region.";

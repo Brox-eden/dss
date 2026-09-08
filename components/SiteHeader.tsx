@@ -17,7 +17,7 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
   const homeHref = locale === "ar" ? "/ar" : "/";
   const contactHref = locale === "ar" ? "/ar/contact" : "/contact";
   const servicesHref = locale === "ar" ? "/ar/services" : "/services";
-  const bookLabel = locale === "ar" ? "احجز استشارة" : "Book a Consultation";
+  const contactLabel = locale === "ar" ? "تواصل معنا" : "Contact Us";
   const webLogo = locale === "ar" ? "/images/web-logo-ar.png" : "/images/web-logo-en.png";
   const webLogoWhite = locale === "ar" ? "/images/web-logo-ar-white.png" : "/images/web-logo-en-white.png";
 
@@ -94,7 +94,7 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
             )
           )}
           <Link href={contactHref} className="btn-primary !py-2">
-            {bookLabel}
+            {contactLabel}
           </Link>
           <LanguageSwitcher locale={locale} />
           <ThemeToggle />
@@ -175,7 +175,7 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
               )
             )}
             <Link href={contactHref} onClick={() => setOpen(false)} className="btn-primary w-full">
-              {bookLabel}
+              {contactLabel}
             </Link>
           </nav>
         </div>

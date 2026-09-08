@@ -18,7 +18,7 @@ export const valueProposition =
   "رحلة تحولك الرقمي تبدأ بأساس هندسي متين، وتُحرس بأمان سيبراني صارم، وتُدار بذكاء اصطناعي فائق.";
 
 export const ctaExploreServices = "اكتشف خدماتنا الاحترافية";
-export const ctaBookConsultation = "احجز استشارة رقمية";
+export const ctaContactUs = "تواصل معنا";
 
 export const vision =
   "أن نكون الدرع الاستشاري والتقني الموثوق للتحول الرقمي الآمن وحماية الأصول السيبرانية في المملكة العربية السعودية والمنطقة.";

@@ -34,7 +34,7 @@ export default function WhyUsPage() {
         <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
           <BackButton locale="en" label="Back" />
           <Link href="/contact" className="btn-primary inline-flex">
-            Book a Consultation
+            Contact Us
           </Link>
         </div>
       </section>
