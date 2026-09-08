@@ -40,7 +40,7 @@ export default function AiAutomationPage() {
           </p>
           <p className="mt-2 text-sm text-muted-strong">
             This site will soon run its own live example: an AI secretary, built on n8n, that answers
-            visitor questions right here and books consultations directly onto our calendar. For now,
+            visitor questions right here and passes on the details to our team directly. For now,
             here&apos;s what we build.
           </p>
         </div>

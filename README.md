@@ -1,10 +1,8 @@
 # DSS — Digital Solutions Shield website
 
-Scaffold built from `DSS_Company_Profile_2026.pdf` and `DSS_Logo_Forest_Gold.pdf`. Next.js (App Router) + TypeScript + Tailwind CSS.
+Bilingual (EN/AR) marketing site for DSS. Next.js (App Router) + TypeScript + Tailwind CSS, built as a static export and deployed to GitHub Pages.
 
 ## Getting started
-
-This was built without running `npm install` (no package registry access in that sandbox), so the first thing to do locally is:
 
 ```bash
 npm install
@@ -15,34 +13,20 @@ Then open http://localhost:3000.
 
 ## What's here
 
-- `app/` — one route per sitemap page: `/`, `/about`, `/services` (+ 3 sub-pages), `/engagement`, `/why-us`, `/contact`
-- `components/` — `SiteHeader`, `SiteFooter`, `ContactForm`
-- `lib/content.ts` — **all site copy lives here**, pulled from the company profile PDF. Edit this file to change wording anywhere on the site rather than hunting through pages.
-- `public/images/` — logo assets extracted directly from the approved `DSS_Logo_Forest_Gold.pdf` (true vector source, rendered at 600dpi — not the earlier JPEG mockups)
-- `tailwind.config.ts` — brand colors wired in as `forest` / `gold` / `cream`, matching the PDF's documented hex values exactly (`#062F21`, `#B38443`, `#FDFAF5`)
-
-## Known placeholders / things to revisit
-
-- **Fonts:** the brand spec calls for DIN Next LT Pro Bold (headings) and Frutiger LT Pro Roman (body) — both commercial fonts. This scaffold uses free look-alikes (Oswald + Inter via `next/font/google`) as placeholders. Swap them in `app/layout.tsx` once you have license files, or tell me and I'll wire in self-hosted `@font-face` versions.
-- **Contact form:** UI only, not wired to anything yet (see `components/ContactForm.tsx`). No backend, no email, no calendar.
-- **AI secretary / booking agent:** intentionally not built yet, per plan — you said n8n is already hosted, but the live demo comes in a later phase. The `/services/ai-automation` page describes it; the contact form is where it'll eventually plug in.
-- **Logo edge fringing:** the transparent PNG cutouts have very minor color fringing on the gradient's highlight edges from the alpha-keying process. Fine for a scaffold; worth a clean re-export from the source PDF if you want pixel-perfect production assets.
-
-## Pushing to GitHub
-
-Matches the push/pull workflow from your last project:
-
-```bash
-git init
-git add .
-git commit -m "Initial DSS website scaffold"
-git branch -M main
-git remote add origin <your-empty-github-repo-url>
-git push -u origin main
-```
-
-Then open the folder in VS Code and continue with the Claude Code extension from there.
+- `app/(en)/` and `app/ar/` — mirrored EN/AR routes: `/`, `/about`, `/services` (+ 4 pillar sub-pages: governance-consulting, cybersecurity, professional-services, ai-automation), `/engagement`, `/why-us`, `/contact`
+- `components/` — `SiteHeader` (includes the services mega menu), `SiteFooter`, `ContactForm`, `BackButton`, `JsonLd`, `ThemeToggle`, `LanguageSwitcher`
+- `lib/content.ts` / `lib/content.ar.ts` — **all site copy lives here**, including each page's SEO title/description (`pageSeo`). Edit these files to change wording anywhere on the site rather than hunting through pages.
+- `lib/seo.ts` — shared hreflang helper, anchor-id helper for service items, and JSON-LD schema builders (Organization + Service)
+- `public/images/` — logo assets sourced from the approved files in the separate `DSS Assets/Logos` folder (not part of this repo) — check there before adding or changing any logo/icon
+- `public/CNAME` — the custom domain GitHub Pages serves (`dss-sa.com`)
+- `tailwind.config.ts` — brand colors as `forest` / `gold` / `cream` (`#062F21`, `#B38443`, `#FDFAF5`)
 
 ## Deploying
 
-Any of Vercel, Netlify, or Cloudflare Pages will auto-detect this as a Next.js app — connect the GitHub repo and it deploys on every push. Point your GoDaddy domain's DNS at whichever you pick (see earlier conversation for the reasoning).
+Push to `main` — `.github/workflows/deploy.yml` builds the static export and publishes it to GitHub Pages automatically. No manual deploy step.
+
+## Known placeholders / things to revisit
+
+- **Fonts:** using free look-alikes (Oswald + Inter + Tajawal via `next/font/google`) as placeholders for the brand's specified commercial fonts.
+- **AI secretary:** the `/services/ai-automation` page describes an n8n-based AI secretary that will eventually answer visitor questions live on the site and hand off details to the team — not built yet.
+- **Contact:** the contact form (`components/ContactForm.tsx`) submits to Web3Forms, emailing `info@ds-shield.com`. The domain moved to `dss-sa.com` but the mailbox hasn't moved yet — update the email in `lib/content.ts` / `lib/content.ar.ts` / `lib/seo.ts` once it does.
