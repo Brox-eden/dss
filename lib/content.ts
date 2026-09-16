@@ -296,9 +296,7 @@ export const pageSeo = {
   },
 };
 
-// Business identity, used on the legal pages and in the footer. crNumber is a
-// placeholder until the real CR digits are supplied — search for the literal
-// string below before this ever ships to production.
+// Business identity, used on the legal pages and in the footer.
 export const legal = {
   entityName: "Digital Solutions Shield",
   crNumber: "7055004498",
@@ -314,100 +312,100 @@ export const legal = {
 export const privacyPolicySections = [
   {
     heading: "Who we are",
-    body: `This Privacy Policy applies to the website operated by ${site.name} ("DSS", "we", "us"), a company registered in Saudi Arabia (CR ${legal.crNumber}), based in ${legal.address}. This policy explains what personal data this website collects, why, and what rights you have over it under Saudi Arabia's Personal Data Protection Law (PDPL).`,
+    body: `This Privacy Policy covers the website run by ${site.name} ("DSS," "we," "us"), a company registered in Saudi Arabia under CR ${legal.crNumber} and based in ${legal.address}. It explains what personal data we collect through this site, why we collect it, and what rights you have over it under Saudi Arabia's Personal Data Protection Law (PDPL).`,
   },
   {
     heading: "What we collect",
-    body: "The only personal data this site collects is what you choose to submit through the Contact form: your name, email address, organization (optional), and your message. We don't use tracking cookies, analytics, or any other data-collection mechanism on this site — see our Cookie & Local Storage Notice for the one non-personal exception (a theme preference stored in your browser).",
+    body: "The only personal data this site collects is what you type into the Contact form. That's your name, your email address, your organization if you choose to give it, and your message. We don't run tracking cookies or analytics here. The one thing we do save in your browser, a theme preference, isn't personal data, and our Cookie & Local Storage Notice explains why.",
   },
   {
     heading: "How we use it",
-    body: "We use the information you submit solely to respond to your inquiry and to communicate with you about the services you asked about. We don't sell your data, use it for advertising, or share it with anyone beyond what's described below.",
+    body: "We use what you submit to answer your inquiry and to talk with you about the service you asked about, and for nothing else. We don't sell your data. We don't use it for advertising. We don't hand it to anyone beyond what's described below.",
   },
   {
     heading: "Third-party processing and international transfer",
-    body: "When you submit the Contact form, your data is sent directly from your browser to Web3Forms, a third-party form-processing service located outside Saudi Arabia, which relays it to our inbox. This means submitting the form involves a cross-border transfer of your personal data. By submitting the form and checking the consent box, you agree to this transfer. You can review Web3Forms' own privacy practices at web3forms.com. We don't use any other third-party data processor on this site.",
+    body: "When you submit the Contact form, your data goes straight from your browser to Web3Forms, a third-party form-processing service based outside Saudi Arabia, and Web3Forms relays it to our inbox. That makes it a cross-border transfer of your personal data. Checking the consent box and submitting the form means you agree to that transfer. You can read Web3Forms' own privacy practices at web3forms.com. We don't use any other third-party processor on this site.",
   },
   {
     heading: "Data retention",
-    body: "We keep the information you submit only for as long as necessary to respond to and manage your inquiry and to maintain reasonable business records, after which it is deleted, unless a longer retention period is required by applicable law.",
+    body: "We hold on to what you submit only as long as we actually need it, to answer your inquiry and keep reasonable business records. After that we delete it, unless the law makes us keep it longer.",
   },
   {
     heading: "Your rights under the PDPL",
-    body: "You have the right to know what data we hold about you, request a copy of it, ask us to correct or delete it, and withdraw your consent to its processing at any time. To exercise any of these rights, contact us using the details below. You also have the right to lodge a complaint with the Saudi Data & Artificial Intelligence Authority (SDAIA) if you believe your data has been mishandled.",
+    body: "You can ask what data we hold on you, get a copy of it, have it corrected or deleted, and withdraw your consent to its processing whenever you want. Reach us using the details below to do any of that. You can also file a complaint with the Saudi Data & Artificial Intelligence Authority (SDAIA) if you think we've mishandled your data.",
   },
   {
     heading: "Security",
-    body: "We take reasonable technical and organizational measures to protect the data submitted to us, but no method of transmission or storage is completely secure, and we can't guarantee absolute security.",
+    body: "We take reasonable technical and organizational steps to protect what you send us, though no method of transmission or storage is ever fully secure, and we can't promise otherwise.",
   },
   {
     heading: "Children's data",
-    body: "This site isn't directed at children, and we don't knowingly collect personal data from anyone below the age required to give consent under Saudi law.",
+    body: "This site isn't aimed at children. We don't knowingly collect personal data from anyone below the age Saudi law requires for giving consent.",
   },
   {
     heading: "Changes to this policy",
-    body: "We may update this policy from time to time to reflect changes to the site or to applicable law. The date of the most recent version will be reflected in our records; material changes will be reflected here.",
+    body: "We may update this policy as the site or the law changes. Any real change will show up here.",
   },
   {
     heading: "Contact us",
-    body: `Questions about this policy, or requests to access, correct, delete, or withdraw consent for your data, can be sent to ${site.email}.`,
+    body: `Questions about this policy, or a request to access, correct, delete, or withdraw consent for your data, can go to ${site.email}.`,
   },
 ];
 
 export const termsSections = [
   {
     heading: "Acceptance of these terms",
-    body: `By accessing or using this website, you agree to these Terms of Use. If you don't agree, please don't use the site. ${site.name} ("DSS", "we", "us") may update these terms from time to time; continued use of the site after an update means you accept the revised terms.`,
+    body: `Using this website means you accept these Terms of Use. If you don't agree with them, please don't use the site. ${site.name} ("DSS," "we," "us") may update these terms over time, and staying on the site after an update means you've accepted the new version.`,
   },
   {
     heading: "Use of this site",
-    body: "This website is provided for informational purposes: to describe our services, and to let you reach us with an inquiry. It isn't a store — no products or services are sold or delivered through the site itself, and no payment is collected here. Any actual engagement with DSS is governed by a separate, signed agreement between DSS and the client, not by these terms.",
+    body: "This website exists to describe our services and let you reach us with an inquiry, nothing more. It's not a store. Nothing is sold or delivered through the site itself, and we don't collect payment here. Any real engagement with DSS runs on a separate, signed agreement between DSS and the client, not on these terms.",
   },
   {
     heading: "Intellectual property",
-    body: "The content on this site — including text, graphics, logos and the DSS name and shield mark — belongs to DSS or is used with permission, and is protected by applicable intellectual property law. You may view and share pages of this site for personal, non-commercial reference, but you may not reproduce, redistribute, or create derivative works from this content without our prior written consent.",
+    body: "Everything on this site, the text, the graphics, the logos, the DSS name, and the shield mark, belongs to DSS or is used with permission, and it's protected under applicable intellectual property law. Feel free to view and share pages of this site for personal, non-commercial reference. Reproducing, redistributing, or building derivative works from this content needs our written consent first.",
   },
   {
     heading: "Not professional advice",
-    body: "Information on this site (including descriptions of our services, methodology, and general cybersecurity/compliance topics) is provided for general informational purposes only and does not constitute professional, security, legal, or compliance advice for your specific situation. Don't rely on it as a substitute for a formal engagement with our team.",
+    body: "Information on this site (our service descriptions, our methodology, general cybersecurity and compliance topics) is general information, not professional, security, legal, or compliance advice for your situation. Treat it that way rather than as a stand-in for actually engaging our team.",
   },
   {
     heading: "Third-party services",
-    body: "The Contact form on this site is processed by a third-party provider, Web3Forms — see our Privacy Policy for details. We aren't responsible for the practices or availability of third-party services we link to or rely on.",
+    body: "A third-party provider, Web3Forms, processes the Contact form on this site. Our Privacy Policy covers the details. We're not responsible for the practices or uptime of third-party services we link to or depend on.",
   },
   {
     heading: "Limitation of liability",
-    body: "This site and its content are provided \"as is,\" without warranties of any kind, to the fullest extent permitted by law. DSS isn't liable for any indirect, incidental, or consequential damages arising from your use of this site.",
+    body: "This site and its content come \"as is,\" without warranties of any kind, to the fullest extent the law allows. DSS isn't liable for indirect, incidental, or consequential damages arising from your use of the site.",
   },
   {
     heading: "Governing law",
-    body: "These terms are governed by the laws of Saudi Arabia, and any dispute arising from them is subject to the jurisdiction of the competent courts of Saudi Arabia.",
+    body: "Saudi Arabian law governs these terms, and any dispute over them falls under the jurisdiction of the competent courts of Saudi Arabia.",
   },
   {
     heading: "Contact us",
-    body: `Questions about these terms can be sent to ${site.email}.`,
+    body: `Questions about these terms can go to ${site.email}.`,
   },
 ];
 
 export const cookieSections = [
   {
     heading: "The short version",
-    body: "This site doesn't use tracking cookies, advertising cookies, or analytics of any kind. There is currently no cookie consent banner because there's nothing on this site that needs one.",
+    body: "This site runs no tracking cookies, no advertising cookies, and no analytics of any kind. There's no cookie consent banner because nothing here needs one.",
   },
   {
     heading: "What we do store in your browser",
-    body: "The only thing this site saves in your browser is a single preference: whether you've chosen light or dark mode. It's stored using your browser's localStorage, stays on your device, is never sent to us or to anyone else, and contains no personal information. It's strictly functional — it just remembers your display preference between visits.",
+    body: "The one thing this site saves in your browser is whether you picked light mode or dark mode. That preference lives in your browser's localStorage, stays on your device, and never reaches us or anyone else. It holds no personal information. It's purely functional, remembering how you like the site to look the next time you visit.",
   },
   {
     heading: "The contact form is the exception",
-    body: "If you submit our Contact form, that data is sent to our third-party form processor, Web3Forms — see our Privacy Policy for how that works. That's a one-time submission you initiate, not passive tracking.",
+    body: "Submitting our Contact form does send data to our third-party form processor, Web3Forms. Our Privacy Policy explains how that works. It's a one-time submission you choose to make, not something tracking you in the background.",
   },
   {
     heading: "If this changes",
-    body: "If we ever add analytics or any other tool that uses cookies or tracking technology, we'll update this notice first and add a proper consent banner before any such technology runs — not after.",
+    body: "Adding analytics or any other cookie- or tracking-based tool later means updating this notice and putting a real consent banner in front of it first. We won't slip that in quietly after the fact.",
   },
   {
     heading: "Managing your browser storage",
-    body: "You can clear your theme preference at any time by clearing your browser's site data for this domain, or by using your browser's private/incognito mode.",
+    body: "You can clear your theme preference any time by clearing this site's data in your browser settings, or by browsing in private or incognito mode.",
   },
 ];
