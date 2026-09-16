@@ -21,7 +21,7 @@ export default function WhyUsPageAr() {
       </section>
 
       <section className="section">
-        <div className="grid gap-6 sm:grid-cols-2">
+        <div className="grid gap-6 sm:grid-cols-3">
           {differentiators.map((d) => (
             <div key={d.number} className="card">
               <span className="font-heading text-sm text-accent">{d.number}</span>

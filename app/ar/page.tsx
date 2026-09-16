@@ -117,7 +117,7 @@ export default function HomeAr() {
       <section className="section">
         <p className="eyebrow">الفرق</p>
         <h2 className="mt-3 font-heading text-3xl font-semibold">لماذا درع الحلول الرقمية؟</h2>
-        <div className="mt-10 grid gap-6 sm:grid-cols-2">
+        <div className="mt-10 grid gap-6 sm:grid-cols-3">
           {differentiators.map((d) => (
             <div key={d.number} className="card">
               <span className="font-heading text-sm text-accent">{d.number}</span>
