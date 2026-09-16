@@ -17,7 +17,7 @@ export default function EngagementPageAr() {
         <div className="section">
           <p className="eyebrow text-gold-light dark:text-forest-dark">المرونة</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">إطار التعاون والتنفيذ</h1>
-          <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">
+          <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/90">
             تعاون معنا بالطريقة التي تناسب مؤسستك: مشروع محدد، أو استشارات مستمرة، أو قدرات مدمجة.
           </p>
         </div>
@@ -38,7 +38,7 @@ export default function EngagementPageAr() {
                 {model.number}
               </span>
               <h2 className="mt-2 font-heading text-xl font-semibold">{model.title}</h2>
-              <p className={model.featured ? "mt-3 text-sm text-cream/80 dark:text-forest-dark/80" : "mt-3 text-sm text-muted"}>
+              <p className={model.featured ? "mt-3 text-sm text-cream/80 dark:text-forest-dark/90" : "mt-3 text-sm text-muted"}>
                 {model.description}
               </p>
             </div>

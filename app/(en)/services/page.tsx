@@ -17,7 +17,7 @@ export default function ServicesPage() {
         <div className="section">
           <p className="eyebrow text-gold-light dark:text-forest-dark">Coverage</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">Service Portfolio</h1>
-          <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">
+          <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/90">
             Governance, cybersecurity, infrastructure and automation: four pillars covering the full path from policy to deployed protection.
           </p>
         </div>
@@ -30,7 +30,7 @@ export default function ServicesPage() {
               <span className="font-heading text-sm text-accent">{pillar.number}</span>
               <h2 className="mt-2 font-heading text-2xl font-semibold">{pillar.title}</h2>
               <p className="mt-3 flex-1 text-sm text-muted">{pillar.summary}</p>
-              <ul className="mt-4 space-y-1 text-sm text-muted-light">
+              <ul className="mt-4 space-y-1 text-sm text-muted">
                 {pillar.items.slice(0, 2).map((item) => (
                   <li key={item.title}>• {item.title}</li>
                 ))}

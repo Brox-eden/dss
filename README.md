@@ -29,4 +29,4 @@ Push to `main` — `.github/workflows/deploy.yml` builds the static export and p
 
 - **Fonts:** using free look-alikes (Oswald + Inter + Tajawal via `next/font/google`) as placeholders for the brand's specified commercial fonts.
 - **AI secretary:** the `/services/ai-automation` page describes an n8n-based AI secretary that will eventually answer visitor questions live on the site and hand off details to the team — not built yet.
-- **Contact:** the contact form (`components/ContactForm.tsx`) submits to Web3Forms, emailing `info@ds-shield.com`. The domain moved to `dss-sa.com` but the mailbox hasn't moved yet — update the email in `lib/content.ts` / `lib/content.ar.ts` / `lib/seo.ts` once it does.
+- **Contact:** the contact form (`components/ContactForm.tsx`) submits to Web3Forms, delivering to `info@dss-sa.com`.

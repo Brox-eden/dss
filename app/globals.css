@@ -59,7 +59,7 @@ p {
   }
 
   .text-muted-light {
-    @apply text-forest/60 dark:text-cream/60;
+    @apply text-forest/70 dark:text-cream/60;
   }
 
   .text-accent {

@@ -28,7 +28,7 @@ export default function ProfessionalServicesPageAr() {
         <div className="section">
           <p className="eyebrow text-gold-light dark:text-forest-dark">هندسي · {pillar.number}</p>
           <h1 className="mt-3 font-heading text-3xl font-semibold sm:text-4xl">{pillar.title}</h1>
-          <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/80">{pillar.summary}</p>
+          <p className="mt-4 max-w-2xl text-cream/80 dark:text-forest-dark/90">{pillar.summary}</p>
         </div>
       </section>
 

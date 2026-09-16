@@ -33,9 +33,9 @@ export default function Home() {
             <h1 className="mt-4 font-heading text-3xl font-semibold leading-tight sm:text-4xl md:text-5xl">
               {heroTitle}
             </h1>
-            <p className="mt-6 max-w-xl text-cream/80 dark:text-forest-dark/80">{site.tagline}</p>
+            <p className="mt-6 max-w-xl text-cream/80 dark:text-forest-dark/90">{site.tagline}</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/contact" className="btn-primary bg-gold text-forest hover:bg-gold-light dark:bg-forest-dark dark:text-cream dark:hover:bg-forest">
+              <Link href="/contact" className="btn-primary bg-gold text-forest-dark hover:bg-gold-light dark:bg-forest-dark dark:text-cream dark:hover:bg-forest">
                 {ctaContactUs}
               </Link>
               <Link href="/services" className="btn-secondary border-cream text-cream hover:bg-cream hover:text-forest dark:border-forest-dark dark:text-forest-dark dark:hover:bg-forest-dark dark:hover:text-gold">
@@ -136,11 +136,11 @@ export default function Home() {
             <h2 className="mt-3 font-heading text-2xl font-semibold sm:text-3xl">
               We build n8n-powered AI agents, too.
             </h2>
-            <p className="mt-3 max-w-xl text-cream/80 dark:text-forest-dark/80">
+            <p className="mt-3 max-w-xl text-cream/80 dark:text-forest-dark/90">
               From client-facing booking assistants to internal HR agents, see what we build and where this site&apos;s own AI secretary is headed.
             </p>
           </div>
-          <Link href="/services/ai-automation" className="btn-primary bg-gold text-forest hover:bg-gold-light dark:bg-forest-dark dark:text-cream dark:hover:bg-forest whitespace-nowrap">
+          <Link href="/services/ai-automation" className="btn-primary bg-gold text-forest-dark hover:bg-gold-light dark:bg-forest-dark dark:text-cream dark:hover:bg-forest whitespace-nowrap">
             See AI Tools & Automation
           </Link>
         </div>

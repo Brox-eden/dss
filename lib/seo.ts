@@ -31,9 +31,11 @@ export function organizationSchema() {
     alternateName: "DSS",
     url: SITE_URL,
     logo: `${SITE_URL}/images/web-logo-en.png`,
-    email: "info@ds-shield.com", // still on the old domain until the new mailbox is set up
+    email: "info@dss-sa.com",
+    identifier: "7055004498",
     address: {
       "@type": "PostalAddress",
+      addressLocality: "Khobar",
       addressCountry: "SA",
     },
   };

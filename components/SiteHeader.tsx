@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { nav as navEn, servicePillars as pillarsEn } from "@/lib/content";
 import { nav as navAr, servicePillars as pillarsAr } from "@/lib/content.ar";
@@ -12,6 +13,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
   const [open, setOpen] = useState(false);
   const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
+  const pathname = usePathname();
   const nav = locale === "ar" ? navAr : navEn;
   const pillars = locale === "ar" ? pillarsAr : pillarsEn;
   const homeHref = locale === "ar" ? "/ar" : "/";
@@ -39,6 +41,7 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
             width={1200}
             height={400}
             priority
+            aria-hidden="true"
             className="hidden h-12 w-auto shrink-0 dark:block sm:h-14"
           />
         </Link>
@@ -49,6 +52,7 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
               <div key={item.href} className="group relative">
                 <Link
                   href={item.href}
+                  aria-haspopup="true"
                   className="flex items-center gap-1 whitespace-nowrap font-heading text-sm font-medium uppercase tracking-wide text-forest transition hover:text-gold-dark dark:text-cream dark:hover:text-gold-light"
                 >
                   {item.label}
@@ -87,6 +91,7 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
               <Link
                 key={item.href}
                 href={item.href}
+                aria-current={pathname === item.href ? "page" : undefined}
                 className="whitespace-nowrap font-heading text-sm font-medium uppercase tracking-wide text-forest transition hover:text-gold-dark dark:text-cream dark:hover:text-gold-light"
               >
                 {item.label}
@@ -104,8 +109,10 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
           <LanguageSwitcher locale={locale} />
           <ThemeToggle />
           <button
+            type="button"
             className="flex flex-col gap-1.5"
             aria-label="Toggle menu"
+            aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
           >
             <span className="h-0.5 w-6 bg-forest dark:bg-cream" />
@@ -132,6 +139,7 @@ export default function SiteHeader({ locale }: { locale: "en" | "ar" }) {
                     <button
                       type="button"
                       aria-label="Toggle services submenu"
+                      aria-expanded={mobileServicesOpen}
                       onClick={() => setMobileServicesOpen((v) => !v)}
                       className="p-1 text-forest dark:text-cream"
                     >
